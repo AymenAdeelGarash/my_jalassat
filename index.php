@@ -127,7 +127,7 @@ if (isset($_SESSION['customer_id'])) {
                     </span>
                 </div>
                 <div class="nav-links desktop-only">
-                    <a href="#products">المجموعات</a>
+                    <a href="#products"> الالاالمجموعات</a>
                     <a href="#how-it-works">كيفية الحجز</a>
                     <a href="#contact">اتصل بنا</a>
                 </div>
@@ -849,4 +849,5 @@ if (isset($_SESSION['customer_id'])) {
     </script>
 </body>
 </html>
+
 
