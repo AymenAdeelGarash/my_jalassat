@@ -1,11 +1,19 @@
-name: Store-CI
-on: [push] # يشتغل تلقائياً عند أي رفع كود
+name: Store-CI-CD
+on: [push]
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Syntax Check
-        run: |
-          # فحص ملفات PHP للتأكد من أنها لا تحتوي على أخطاء برمجية
-          find . -name "*.php" -exec php -l {} \;
+      - name: Get Code
+        uses: actions/checkout@v3
+
+      - name: Check PHP Syntax
+        run: find . -name "*.php" -exec php -l {} \;
+
+      - name: Deploy to InfinityFree
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ./htdocs/
