@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"code": "WINTER2026",
+		"discount_type": "percentage",
+		"discount_value": 10,
+		"min_order": 500,
+		"max_uses": 100,
+		"used_count": 0,
+		"valid_from": "2026-01-01",
+		"valid_until": "2026-03-31",
+		"status": "active"
+	},
+	{
+		"id": 2,
+		"code": "FIRST50",
+		"discount_type": "fixed",
+		"discount_value": 50,
+		"min_order": 300,
+		"max_uses": 50,
+		"used_count": 0,
+		"valid_from": "2026-01-01",
+		"valid_until": "2026-12-31",
+		"status": "active"
+	}
+]

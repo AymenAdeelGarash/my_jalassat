@@ -1,0 +1,290 @@
+/* Info Section Styles */
+.info-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, rgba(201, 160, 80, 0.03) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.info-card {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    padding: 35px;
+    text-align: center;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+    box-shadow: 0 20px 40px rgba(201, 160, 80, 0.2);
+}
+
+.info-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, var(--primary) 0%, #d4af37 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.info-card h3 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.info-card p {
+    color: var(--text-dim);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Amenities Section */
+.amenities-section {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.amenities-section h3 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--primary);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.amenity-item {
+    background: rgba(201, 160, 80, 0.05);
+    border: 1px solid rgba(201, 160, 80, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.amenity-item:hover {
+    background: rgba(201, 160, 80, 0.1);
+    transform: scale(1.05);
+}
+
+.amenity-item i {
+    color: var(--primary);
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+/* Booking Terms */
+.booking-terms {
+    margin-top: 30px;
+}
+
+.terms-box {
+    background: linear-gradient(135deg, rgba(201, 160, 80, 0.1) 0%, rgba(201, 160, 80, 0.05) 100%);
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.terms-box i {
+    font-size: 2.5rem;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.terms-box h4 {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.terms-box p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Mobile Responsive for Info Section */
+@media (max-width: 768px) {
+    .info-section {
+        padding: 30px 10px;
+    }
+
+    .info-grid {
+        display: flex !important;
+        flex-direction: row !important;
+        /* Force horizontal */
+        flex-wrap: nowrap !important;
+        /* No stacking allowed */
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .info-card {
+        flex: 1;
+        width: 31%;
+        /* Exact width for 3 cols */
+        padding: 12px 2px !important;
+        border-radius: 12px;
+        min-width: 0;
+    }
+
+    .info-icon {
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 0.8rem !important;
+        margin-bottom: 5px !important;
+    }
+
+    .info-card h3 {
+        font-size: 0.65rem !important;
+        margin-bottom: 3px;
+        white-space: nowrap !important;
+    }
+
+    .info-card p,
+    .info-card a {
+        font-size: 0.55rem !important;
+        line-height: 1.1;
+        word-break: break-all;
+    }
+
+    .amenities-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 5px;
+    }
+
+    .amenity-item {
+        padding: 8px 1px;
+        font-size: 0.6rem;
+    }
+
+    .amenity-item i {
+        display: block;
+        margin-bottom: 3px;
+        font-size: 0.8rem;
+    }
+
+    .terms-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .terms-box i {
+        font-size: 1.8rem;
+    }
+}
+
+/* Bank Details Styles */
+.bank-details {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(201, 160, 80, 0.3);
+}
+
+.bank-details h5 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.bank-details h5 i {
+    margin-left: 8px;
+}
+
+.bank-info-grid {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.bank-item {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(201, 160, 80, 0.3);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.bank-label {
+    font-weight: 700;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+}
+
+.bank-value {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: var(--primary);
+    flex: 1;
+    direction: ltr;
+    text-align: left;
+}
+
+.copy-btn {
+    background: var(--primary);
+    color: #000;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.copy-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(201, 160, 80, 0.4);
+}
+
+.copy-btn:active {
+    transform: scale(0.95);
+}
+
+.bank-note {
+    background: rgba(201, 160, 80, 0.1);
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+}
+
+.bank-note i {
+    color: var(--primary);
+    margin-left: 5px;
+}

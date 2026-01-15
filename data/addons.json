@@ -1,0 +1,26 @@
+[
+	{
+		"id": "a1",
+		"name": "كيس فحم أفريقي (5 كجم)",
+		"price": 45,
+		"image": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?q=80&w=200&auto=format&fit=crop"
+	},
+	{
+		"id": "a2",
+		"name": "دلة قهوة عربية + تمر",
+		"price": 60,
+		"image": "https://images.unsplash.com/photo-1541167760496-162955ed8a9f?q=80&w=200&auto=format&fit=crop"
+	},
+	{
+		"id": "a3",
+		"name": "طقم شاي (3 أنواع)",
+		"price": 35,
+		"image": "https://images.unsplash.com/photo-1594631252845-29fc458639a6?q=80&w=200&auto=format&fit=crop"
+	},
+	{
+		"id": "a4",
+		"name": "حطب سمر طبيعي",
+		"price": 55,
+		"image": "https://images.unsplash.com/photo-1520114056694-98444158aa58?q=80&w=200&auto=format&fit=crop"
+	}
+]

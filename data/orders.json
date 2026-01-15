@@ -1,0 +1,45 @@
+[
+    {
+        "id": "6963ff0c5aeee",
+        "items": "دفاية الرمال الذهبية",
+        "total": 450,
+        "status": "completed",
+        "date": "2026-01-11 20:50:36"
+    },
+    {
+        "id": "6964e824548b2",
+        "items": "جلسة نجد الكلاسيكية",
+        "item_ids": [
+            1
+        ],
+        "total": 1500,
+        "status": "pending",
+        "date": "2026-01-12 13:25:08"
+    },
+    {
+        "id": "6964f56c8109c",
+        "date": "2026-01-12 14:21:48",
+        "booking_date": "",
+        "booking_time": "",
+        "cart": [
+            {
+                "id": 2,
+                "name": "خيمة القمر الفاخرة",
+                "price_regular": 2500,
+                "price_weekend": 3000,
+                "image": "https:\/\/images.unsplash.com\/photo-1504280390367-361c6d9f38f4?q=80&w=1000&auto=format&fit=crop",
+                "status": "available",
+                "badge": "حجزه عميل في حي النرجس📍",
+                "description": "تجربة تخييم 5 نجوم في حديقتك.",
+                "ar_url": "https:\/\/modelviewer.dev\/shared-assets\/models\/Astronaut.glb",
+                "price": 2500,
+                "bookingDay": "وسط الأسبوع"
+            }
+        ],
+        "total": 2500,
+        "coupon": "",
+        "discount": 0,
+        "status": "cancelled",
+        "payment_status": "unpaid"
+    }
+]
