@@ -152,7 +152,7 @@ if (isset($_SESSION['customer_id'])) {
         <div class="container hero-content">
             <div class="hero-badge">موسم شتاء 2026</div>
             <h1>عِش متعة الـ <span class="gradient-text">جلسات شتوية</span> بطابع ملكي</h1>
-            <p>أفخم الجلسات الشتوية في الرياض، مجهزة بالكامل لتناسب ذوقك الرفيع.</p>
+            <p أفخم الجلسات الشتوية في الرياض، مجهزة بالكامل لتناسب ذوقك الرفيع دكتور يحي.</p>
             <div class="hero-btns">
                 <a href="#products" class="btn btn-primary">عرض التشكيلة</a>
                 <a href="https://wa.me/<?php echo str_replace('+', '', $settings['store_phone']); ?>" class="btn btn-outline">استشارة سريعة</a>
@@ -849,3 +849,4 @@ if (isset($_SESSION['customer_id'])) {
     </script>
 </body>
 </html>
+
