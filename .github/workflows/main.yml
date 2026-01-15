@@ -1,17 +1,16 @@
-name: Store-CI-CD
+name: Deploy-To-Infinity
 on: [push]
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Get Code
+      - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Deploy to InfinityFree
+      - name: Sync Files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: htdocs/
-          local-dir: ./
