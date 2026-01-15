@@ -1,0 +1,11 @@
+name: Store-CI
+on: [push] # يشتغل تلقائياً عند أي رفع كود
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Syntax Check
+        run: |
+          # فحص ملفات PHP للتأكد من أنها لا تحتوي على أخطاء برمجية
+          find . -name "*.php" -exec php -l {} \;
